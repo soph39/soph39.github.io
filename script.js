@@ -4,7 +4,7 @@ let prevCaseNum = 0;
 function buttonClicked() {
     clickedNum += 1;
     while (caseNum == prevCaseNum){
-        caseNum = (Math.floor(Math.random() * 15));
+        caseNum = (Math.floor(Math.random() * 16));
     }
     prevCaseNum = caseNum;
     
@@ -56,12 +56,14 @@ function buttonClicked() {
             case 14:
                 randText = "Waiting for: GitHub 2????";
                 break;
+            case 15:
+                randText = "This... is... FARGO!!!";
+                break;
         }
-        
-        document.getElementById("coolButton").textContent = randText;
     }
     else if (clickedNum >= 100 && clickedNum < 200) {
         randText = "STOP THAT!!!!";
+        console.log("check");
     }
     else if (clickedNum >= 200 && clickedNum < 500) {
         randText = "SERIOUSLY, CUT IT OUT!";
@@ -75,4 +77,6 @@ function buttonClicked() {
     if (clickedNum < 500) {
         document.getElementById("buttonStats").textContent = "Button clicked " + clickedNum + " times!";
     }
+    
+    document.getElementById("coolButton").textContent = randText;
 }
