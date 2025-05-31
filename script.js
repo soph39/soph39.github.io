@@ -10,7 +10,7 @@ function buttonClicked() {
                 randText = "Knock knock. Who's there? Me!";
                 break;
             case 3:
-                randText = "Okay. that one hurt!";
+                randText = "Okay. That one hurt!";
                 break;
             case 4:
                 randText = "Hello? Can anyone hear me?";
