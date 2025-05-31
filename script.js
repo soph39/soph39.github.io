@@ -2,7 +2,7 @@ let clickedNum = 0;
 function buttonClicked() {
     clickedNum += 1;
     if (clickedNum < 100) {
-        switch (Math.floor(Math.random() * 10)) {
+        switch (Math.floor(Math.random() * 15)) {
             case 0:
                 randText = "To err is to human, to forgive is divine";
                 break;
@@ -29,6 +29,21 @@ function buttonClicked() {
                 break;
             case 9:
                 randText = "Waiting for: Rhythm Heaven Groove!";
+                break;
+            case 10:
+                randText = "ctrl + u";
+                break;
+            case 11:
+                randText = "AAAS YOUUUU WIIISH";
+                break;
+            case 12:
+                randText = "Waiting for: A rainy day";
+                break;
+            case 13:
+                randText = "Waiting for: Blender 5.0";
+                break;
+            case 14:
+                randText = "Waiting for: GitHub 2????";
                 break;
         }
     } else if (clickedNum >= 100 && clickedNum < 200) {
