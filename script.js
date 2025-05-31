@@ -1,14 +1,25 @@
 let clickedNum = 0;
+let caseNum = 0;
+let prevCaseNum = 0;
 function buttonClicked() {
     clickedNum += 1;
+    while (caseNum == prevCaseNum){
+        caseNum = (Math.floor(Math.random() * 15));
+    }
+    prevCaseNum = caseNum;
+    
     if (clickedNum < 100) {
-        switch (Math.floor(Math.random() * 15)) {
+        switch (caseNum) {
             case 0:
                 randText = "To err is to human, to forgive is divine";
                 break;
             case 1:
                 randText = "Knock knock. Who's there? Me!";
                 break;
+            case 2:
+                randText = "Missed a spot!";
+                break;
+            //In honor of me missing the 2nd switch case the first time around
             case 3:
                 randText = "Okay. That one hurt!";
                 break;
@@ -46,17 +57,20 @@ function buttonClicked() {
                 randText = "Waiting for: GitHub 2????";
                 break;
         }
-    } else if (clickedNum >= 100 && clickedNum < 200) {
+        
+        document.getElementById("coolButton").textContent = randText;
+    }
+    else if (clickedNum >= 100 && clickedNum < 200) {
         randText = "STOP THAT!!!!";
-    } else if (clickedNum >= 200 && clickedNum < 500) {
+    }
+    else if (clickedNum >= 200 && clickedNum < 500) {
         randText = "SERIOUSLY, CUT IT OUT!";
-    } else if (clickedNum >= 500) {
+    }
+    else if (clickedNum >= 500) {
         document.getElementById("buttonStats").textContent =
             "That's enough. I'm taking away your button privledges >:(";
         document.getElementById("coolButton").style.visibility = "hidden";
     }
-
-    document.getElementById("coolButton").textContent = randText;
 
     if (clickedNum < 500) {
         document.getElementById("buttonStats").textContent = "Button clicked " + clickedNum + " times!";
