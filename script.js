@@ -1,12 +1,14 @@
 let clickedNum = 0;
 let caseNum = 0;
 let prevCaseNum = 0;
+let stopClicks = false;
 function buttonClicked() {
     clickedNum += 1;
     while (caseNum == prevCaseNum){
         caseNum = (Math.floor(Math.random() * 16));
     }
     prevCaseNum = caseNum;
+    console.log(caseNum);
     
     if (clickedNum < 100) {
         switch (caseNum) {
@@ -63,18 +65,20 @@ function buttonClicked() {
     }
     else if (clickedNum >= 100 && clickedNum < 200) {
         randText = "STOP THAT!!!!";
-        console.log("check");
     }
     else if (clickedNum >= 200 && clickedNum < 500) {
         randText = "SERIOUSLY, CUT IT OUT!";
     }
-    else if (clickedNum >= 500) {
-        document.getElementById("buttonStats").textContent =
+    else if (clickedNum >= 500 && stopClicks == false) {
+        if(caseNum == 13){
+            stopClicks = true;
+            document.getElementById("buttonStats").textContent =
             "That's enough. I'm taking away your button privledges >:(";
-        document.getElementById("coolButton").style.visibility = "hidden";
+            document.getElementById("coolButton").style.visibility = "hidden";
+        }
     }
 
-    if (clickedNum < 500) {
+    if (stopClicks == false) {
         document.getElementById("buttonStats").textContent = "Button clicked " + clickedNum + " times!";
     }
     
