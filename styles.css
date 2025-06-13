@@ -11,6 +11,15 @@
     border-radius: 20px;
 }
 
+.header2 {
+    padding: 5px;
+    text-align: center;
+    border-radius: 20px;
+    outline-color: #302839;
+    outline-width: 5px;
+    outline-style: double;
+}
+
 .button {
     background-color: #c19fe8;
     border: none;
