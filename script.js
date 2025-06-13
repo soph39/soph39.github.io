@@ -86,5 +86,5 @@ function buttonClicked() {
     
     document.getElementById("coolButton").textContent = randText;
     
-    return False;
+    return false;
 }
