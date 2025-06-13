@@ -2,7 +2,9 @@ let clickedNum = 0;
 let caseNum = 0;
 let prevCaseNum = 0;
 let stopClicks = false;
+
 function buttonClicked() {
+    event.preventDefault();
     clickedNum += 1;
     while (caseNum == prevCaseNum){
         caseNum = (Math.floor(Math.random() * 16));
@@ -83,4 +85,6 @@ function buttonClicked() {
     }
     
     document.getElementById("coolButton").textContent = randText;
+    
+    return False;
 }
