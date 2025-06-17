@@ -15,7 +15,7 @@ function buttonClicked() {
     if (clickedNum < 100) {
         switch (caseNum) {
             case 0:
-                randText = "To err is to human, to forgive is divine";
+                randText = "To err is human, to forgive is divine";
                 break;
             case 1:
                 randText = "Knock knock. Who's there? Me!";
