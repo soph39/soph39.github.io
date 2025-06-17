@@ -88,7 +88,7 @@ body {
 }
 
 #footer{
-    position: fixed;
+    margin-top: auto;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -96,6 +96,12 @@ body {
     color: white;
     text-align: center;
     padding: 5px;
+}
+
+#main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .preview{
