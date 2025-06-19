@@ -81,7 +81,12 @@ function buttonClicked() {
     }
 
     if (stopClicks == false) {
+        if (clickedNum == 1){
+        document.getElementById("buttonStats").textContent = "Button clicked " + clickedNum + " time!";
+        }
+        else{
         document.getElementById("buttonStats").textContent = "Button clicked " + clickedNum + " times!";
+        }
     }
     
     document.getElementById("coolButton").textContent = randText;
