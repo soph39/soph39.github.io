@@ -75,7 +75,7 @@ function buttonClicked() {
         if(caseNum == 13){
             stopClicks = true;
             document.getElementById("buttonStats").textContent =
-            "That's enough. I'm taking away your button privledges >:(";
+            "That's enough. I'm taking away your button privileges >:(";
             document.getElementById("coolButton").style.visibility = "hidden";
         }
     }
