@@ -7,7 +7,7 @@ function buttonClicked() {
     event.preventDefault();
     clickedNum += 1;
     while (caseNum == prevCaseNum){
-        caseNum = (Math.floor(Math.random() * 16));
+        caseNum = (Math.floor(Math.random() * 17));
     }
     prevCaseNum = caseNum;
     console.log(caseNum);
@@ -62,6 +62,9 @@ function buttonClicked() {
                 break;
             case 15:
                 randText = "This... is... FARGO!!!";
+                break;
+            case 16:
+                randText = "See, it's ok. He saw it on the television!";
                 break;
         }
     }
