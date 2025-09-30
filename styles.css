@@ -106,10 +106,9 @@ body {
 }
 
 .preview{
-    display:block;
     max-width: 20%;
     height: auto;
-    float:left;
+    float: left;
     padding: 10px;  
 }
 
