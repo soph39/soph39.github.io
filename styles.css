@@ -121,3 +121,15 @@ p{
 a{
     color: #c19fe8;
 }
+
+.imageflex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.imageflexcontent{
+    margin-left: 5px;
+    margin-top: 0;
+}
