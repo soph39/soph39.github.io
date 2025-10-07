@@ -43,7 +43,6 @@ body {
     font-family: "Trebuchet MS", sans-serif;
     color: white;
     background-color: #000000;
-    padding: 0;
     margin: 0;
 }
 
@@ -102,6 +101,8 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .preview{
@@ -112,8 +113,9 @@ body {
 }
 
 p{
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: larger;
 }
 
 a{
@@ -131,3 +133,4 @@ a{
     margin-left: 5px;
     margin-top: 0;
 }
+
