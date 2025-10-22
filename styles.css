@@ -85,7 +85,7 @@ body {
     padding-top: 10px;
 }
 
-#footer{
+footer{
     margin-top: auto;
     left: 0;
     bottom: 0;
@@ -97,13 +97,14 @@ body {
     padding-bottom: 5px;
 }
 
-#main{
+main{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     padding-left: 10%;
     padding-right: 10%;
 }
+
 
 .preview{
     max-width: 20%;
@@ -132,3 +133,6 @@ a{
     margin-top: 0;
 }
 
+.title2{
+    font-size: large;
+}
