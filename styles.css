@@ -5,8 +5,10 @@
 }
 
 .header {
-    padding: 5px;
-    margin: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: center;
     background-color: #302839;
     border-radius: 20px;
