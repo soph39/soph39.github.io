@@ -43,7 +43,7 @@ function buttonClicked() {
                 randText = "Computer engineer? More like... computer... uhhhhhh";
                 break;
             case 9:
-                randText = "Waiting for: Rhythm Heaven Groove!";
+                randText = "IT'S GROOVIN' TIME!";
                 break;
             case 10:
                 randText = "ctrl + u";
