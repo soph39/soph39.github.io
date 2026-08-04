@@ -27,9 +27,23 @@
 .div{
     width: 100%;
 }
+
+.button:hover{
+    border: solid;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.button2:hover{
+    background-color: hsl(var(--randomColor, 0), 90%, 80%);
+    border: solid;
+    color: #000000;
+    border-color: (var(--randomColor, 0), 90%, 80%);
+}
+
 .button {
     background-color: #c19fe8;
-    border: none;
+    border: solid;
     color: #000000;
     padding: 5px 20px;
     margin: 10px;
@@ -40,6 +54,39 @@
     cursor: pointer;
     border-radius: 15px;
     font-family: "Trebuchet MS", sans-serif;
+    transition: background-color 0.2s ease;
+}
+
+.button2 {
+    background-color: none;
+    border: solid;
+    color: #c19fe8;
+    padding: 5px 10px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: "Trebuchet MS", sans-serif;
+    transition: background-color 0.2s ease;
+}
+
+#coolButton {
+    background-color: hsl(var(--randomColor, 268), 90%, 80%);
+    border: solid;
+    color: #000000;
+    padding: 5px 20px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-family: "Trebuchet MS", sans-serif;
+    transition: background-color 0.2s ease;
 }
 
 body {
@@ -84,8 +131,10 @@ body {
     top: 0;
     overflow: hidden;
     background-color: #000000;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    font-size: 5%;
 }
 
 footer{
