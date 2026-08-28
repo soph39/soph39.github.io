@@ -14,7 +14,7 @@
     border-radius: 20px;
 }
 
-::selection{
+.p::selection{
     background-color: #302839;
 }
 
