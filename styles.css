@@ -131,7 +131,7 @@ body {
 
 .imgMain {
     display:block;
-    max-width: 45%;
+    max-width: 35%;
     height: auto;
     margin: auto;
 }
@@ -223,4 +223,16 @@ h3{
 
 label{
     font-size: larger
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.image-container img {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
 }
