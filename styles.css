@@ -169,7 +169,7 @@ main{
 
 
 .preview{
-    max-width: 15%;
+    max-width: 100px;
     height: auto;
     float: left;
     padding: 10px;  
