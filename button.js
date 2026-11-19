@@ -45,7 +45,7 @@ function buttonClicked() {
                 randText = "Go Bison!";
                 break;
             case 8:
-                randText = "Computer engineer? More like... computer... uhhhhhh";
+                randText = "Listen to KNDS-LP 96.3 FM!!!";
                 break;
             case 9:
                 randText = "IT'S GROOVIN' TIME!";
@@ -60,10 +60,10 @@ function buttonClicked() {
                 randText = "Waiting for: A rainy day";
                 break;
             case 13:
-                randText = "Waiting for: Blender 5.0";
+                randText = "Waiting for Blender 6.0";
                 break;
             case 14:
-                randText = "Waiting for: GitHub 2????";
+                randText = "Waiting for GitHub 2????";
                 break;
             case 15:
                 randText = "This... is... FARGO!!!";
