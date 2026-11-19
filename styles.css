@@ -135,6 +135,12 @@ body {
     height: auto;
     margin: auto;
 }
+.imgMain2 {
+    display:block;
+    max-width: 80%;
+    height: auto;
+    margin: auto;
+}
 
 #navbar {
     position: sticky;
