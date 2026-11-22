@@ -3,6 +3,7 @@
     font-family: "Trebuchet MS", sans-serif;
     font-variant: small-caps;
     font-size: 300%;
+    font-weight: bolder;
 }
 
 .header {
@@ -65,6 +66,7 @@
     border-radius: 15px;
     font-family: "Trebuchet MS", sans-serif;
     transition: background-color 0.2s ease;
+    font-weight: bolder;
 }
 
 .button2 {
@@ -214,6 +216,7 @@ a{
 }
 
 .title2{
+    font-weight: bold;
     font-size: large;
 }
 
@@ -241,4 +244,19 @@ label{
   width: 40%;
   height: auto;
   object-fit: cover;
+}
+
+.label{
+    background-color: #c19fe8;
+    border: solid;
+    color: #000000;
+    padding: 10px;
+}
+
+li::marker {
+    content: "★";
+}
+
+li{
+    font-size: larger;
 }
